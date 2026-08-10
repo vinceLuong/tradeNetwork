@@ -83,7 +83,7 @@ def plot_umap(
     min_dist=0.1,
     metric="euclidean",
     title="UMAP projection",
-    save_path=None,
+    output=None,
     random_state=42,
     annotate=True,
 ):
@@ -152,8 +152,8 @@ def plot_umap(
     plt.ylabel("UMAP-2")
     plt.tight_layout()
 
-    if save_path:
-        plt.savefig(save_path, dpi=300, bbox_inches="tight")
+    if output:
+        plt.savefig(output, dpi=300, bbox_inches="tight")
 
     plt.show()
 
@@ -173,7 +173,7 @@ if __name__ == "__main__":
     parser.add_argument("--metric", type=str, default="euclidean")
     parser.add_argument("--no_annotate", action="store_true",
                          help="Disable point text labels (useful for very dense graphs)")
-    parser.add_argument("--save_path", type=str, default=None,
+    parser.add_argument("--output", type=str, default=None,
                          help="If provided, save the figure to this path")
 
     args = parser.parse_args()
@@ -197,5 +197,5 @@ if __name__ == "__main__":
         categories=categories,
         metric=args.metric,
         annotate=not args.no_annotate,
-        save_path=args.save_path,
+        output=args.output,
     )
