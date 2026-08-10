@@ -1,5 +1,5 @@
 # tradeNetwork ReadMe
-Joint work with Anthony Bonato, Vincent Luong and Kyne Santos
+Joint work with Anthony Bonato, Vincent Luong and Kyne Santos.
 
 # Directory Structure
 
