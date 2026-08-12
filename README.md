@@ -10,7 +10,7 @@ Contains trade network data files.
 - `TradeData_2000_2011.csv` - US Comtrade data on oil exports and imports from 2000 to 2011
 - `TradeData_2012_2023.csv` - US Comtrade data on oil exports and imports from 2012 to 2023
 - `TradeData_2024_2025.csv` - US Comtrade data on oil exports and imports from 2024 to 2025
-- `Oil Trade full graph.csv` - edge list with year and weight label. Source is exporting country
+- `Oil Trade full graph.csv` - edge list with year and weight label. Source is importing country.
 - `Oil Trade stat table.csv` - lists top 5 countries by pagerank and weighted indegree from 1988 to 2025, along with the number of nodes, edges, clustering coefficient, number of connected components, and average path length
 
 ## plots
