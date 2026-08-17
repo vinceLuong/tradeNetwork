@@ -2,7 +2,10 @@ import networkx as nx
 import itertools
 import numpy as np
 
-from util.four_profile_util import *
+try:
+    from four_profile_util import *
+except:
+    from four_profile_src.four_profile_util import *
 
 def four_profile(g: nx.Graph):
     """Computes the number of 4-node subgraphs that exists in a NetworkX Graph
